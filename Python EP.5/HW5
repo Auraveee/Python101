@@ -1,0 +1,13 @@
+##จงเขียนโปรแกรมที่หาว่าวันไหน 1 สัปดาห์ที่ใช้เงินมากกว่า 200 บาทใน Dictionary ตามนี้ 
+##: week = {‘Monday’ :150, ‘Tuesday’ : 200,  ‘Wednesday’ :300, ‘Thursday’ :220, ‘Friday’ : 250 , ‘Saturday’ :290 , ‘Sunday’ : 400}
+
+
+
+def checkmoney (week):
+    for w in week.items():
+        if w[1] >= 200:
+            print(w[0], w[1])
+
+            
+week = {'Monday' :150, 'Tuesday' : 200,  'Wednesday' :300, 'Thursday' :220, 'Friday' : 250 , 'Saturday' :290 , 'Sunday' : 400}
+checkmoney(week)
